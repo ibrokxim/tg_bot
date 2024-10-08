@@ -144,13 +144,13 @@
                         <div data-i18n="Tables">Пользователи</div>
                     </a>
                 </li>
-                <li class="menu-item active">
+                <li class="menu-item">
                     <a href="/link" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-detail"></i>
                         <div data-i18n="Form Layouts">Рассылка сообщений</div>
                     </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                     <a href="/editMessage" class="menu-link">
                         <i class="menu-icon tf-icons bx bx-detail"></i>
                         <div data-i18n="Form Layouts">Редактировать текст</div>
@@ -164,14 +164,14 @@
                 <!-- Content -->
                 <div class="centered-form">
                     <div class="card">
-                        <h5 class="card-header">Рассылка сообщений</h5>
+                        <h5 class="card-header">Редактирование текста сообщения</h5>
                         <div class="card-body">
-                            <form action="/broadcast" method="post">
+                            <form action="/updateMessage" method="post">
                                 <div class="form-group">
-                                    <label for="message">Сообщение:</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                                    <label for="message">Текст сообщения:</label>
+                                    <textarea class="form-control" id="message" name="message" rows="10" required><%= messageText %></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                <button type="submit" class="btn btn-primary">Сохранить</button>
                             </form>
                         </div>
                     </div>
