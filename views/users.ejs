@@ -181,9 +181,10 @@
                                 </tr>
                                 </thead>
                                 <tbody>
+                                <% let counter = 1; %>
                                 <% users.forEach(user => { %>
                                     <tr>
-                                        <td><%= user.id %></td>
+                                        <td><%= counter++ %></td>
                                         <td><%= user.user_id %></td>
                                         <td><%= user.username %></td>
                                         <td><%= user.first_name %></td>

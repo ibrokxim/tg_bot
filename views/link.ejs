@@ -166,11 +166,18 @@
                     <div class="card">
                         <h5 class="card-header">Рассылка сообщений</h5>
                         <div class="card-body">
-                            <form action="/broadcast" method="post">
+                            <form action="/broadcast" method="post" enctype="multipart/form-data">
+
                                 <div class="form-group">
                                     <label for="message">Сообщение:</label>
                                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                                 </div>
+                                <br>
+                                <div class="input-group">
+                                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                                    <input type="file" class="form-control" id="inputGroupFile01" name="photo"/>
+                                </div>
+                                <br>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
                             </form>
                         </div>
